@@ -31,4 +31,4 @@ php artisan discord:link
 
 Then follow the instructions in the terminal.
 5. Done!
-
+6. Leave a star on the [GitHub repository](https://github.com/CorwinDev/paymenter-discordlink) if you like this extension!
