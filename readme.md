@@ -7,7 +7,7 @@ This extension allows you to give your customers a role after they have paid for
 ## How to install
 
 1. Download the latest version of the extension from the [releases page](/releases).
-2. Upload the extension to your server.
+2. Upload the extension to your paymenter installation(/var/www/paymenter)
 3. Add this to the web.php file in the routes folder:
 After the
 
