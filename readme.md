@@ -4,6 +4,17 @@
 
 This extension allows you to give your customers a role after they have paid for a product. This is done by linking their Discord account to their account on your website. This extension is made for the [Paymenter](https://paymenter.org).
 
+Screenshots:
+
+User in chat: 
+
+![image](https://github.com/CorwinDev/paymenter-discordlink/assets/88144943/9506ea21-b474-4906-bf55-5dc8010eeb77)
+
+Linking Paymenter -> Discord
+
+![image](https://github.com/CorwinDev/paymenter-discordlink/assets/88144943/db85fd2b-bd5a-483f-8b69-cace48da967d)
+
+
 ## How to install
 
 1. Download the latest version of the extension from the [releases page](/releases).
