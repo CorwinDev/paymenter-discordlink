@@ -19,15 +19,17 @@ Linking Paymenter -> Discord
 ## How to install
 
 **1.** Download the latest version of the extension from the [releases page](https://github.com/CorwinDev/paymenter-discordlink/releases).
+
 **2.** Upload the extension to your server.
-**3.** Wklej kod podany poniżej w plik `routes/web.php`
+
+**3.** Paste the code given below into the file `routes/web.php`
 
 ```php
 Route::get('/linkedroles', [App\Http\Controllers\LinkedRoleController::class, 'index'])->name('linkedroles.index')->middleware(['auth']);
 Route::get('/linkedroles/callback', [App\Http\Controllers\LinkedRoleController::class, 'callback'])->name('linkedroles.callback')->middleware(['auth']);
 ```
 
-**Pod tą częścią kodu**
+**Under this part of the code**
 
 ```php
 Route::post('/credits', [App\Http\Controllers\Clients\HomeController::class, 'addCredits'])->name('clients.credits.add')->middleware(['auth']);
@@ -67,3 +69,5 @@ To grant a user the role, they must click on "Linked Roles" from the server's co
 
 
 **11.** Done!
+
+**12.** Leave a star on the GitHub repository if you like this extension!
