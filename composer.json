@@ -1,0 +1,27 @@
+{
+    "name": "corwindev/paymenter-discordlink",
+    "description": "Link customers discords with paymenter",
+    "type": "paymenter-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Corwindev\\PaymenterDiscordlink\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Corwin",
+            "email": "info@corwindev.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Corwindev\\PaymenterDiscordlink\\DiscordLinkServiceProvider"
+            ]
+        }
+    }
+}
