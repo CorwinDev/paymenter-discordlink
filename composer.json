@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Corwindev\\PaymenterDiscordlink\\": "src/"
+            "Corwindev\\PaymenterDiscordLink\\": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Corwindev\\PaymenterDiscordlink\\PaymenterDiscordLinkServiceProvider"
+                "Corwindev\\PaymenterDiscordLink\\PaymenterDiscordLinkServiceProvider"
             ]
         }
     }
