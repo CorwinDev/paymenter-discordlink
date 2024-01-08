@@ -3,7 +3,7 @@
 namespace CorwinDev\PaymenterDiscordLink;
 
 use Illuminate\Support\ServiceProvider;
-use CorwinDev\PaymenterDiscordlink\Console\Commands\DiscordLink;
+use CorwinDev\PaymenterDiscordLink\Console\Commands\DiscordLink;
 
 class PaymenterDiscordLinkServiceProvider extends ServiceProvider
 {
