@@ -5,6 +5,7 @@ namespace CorwinDev\PaymenterDiscordLink\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\Controller;
 
 class LinkedRoleController extends Controller
 {
