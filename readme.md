@@ -18,43 +18,30 @@ Linking Paymenter -> Discord
 
 ## How to install
 
-**1.** Download the latest version of the extension from the [releases page](https://github.com/CorwinDev/paymenter-discordlink/releases).
+**1.** Download using composer:
 
-**2.** Upload the extension to your server.
-
-**3.** Paste the code given below into the file `routes/web.php`
-
-```php
-Route::get('/linkedroles', [App\Http\Controllers\LinkedRoleController::class, 'index'])->name('linkedroles.index')->middleware(['auth']);
-Route::get('/linkedroles/callback', [App\Http\Controllers\LinkedRoleController::class, 'callback'])->name('linkedroles.callback')->middleware(['auth']);
-```
-
-**Under this part of the code**
-
-```php
-Route::post('/credits', [App\Http\Controllers\Clients\HomeController::class, 'addCredits'])->name('clients.credits.add')->middleware(['auth']);
-```
+`composer require corwindev/paymenter-discordlink`
 
 ### **ATTENTION!** If you already have Discord login set up in your panel, skip steps 4 and 5.
 
-**4.** Go to https://discord.com/developers/applications/ and create a new application.
+**2.** Go to https://discord.com/developers/applications/ and create a new application.
 
-**5.** Access the newly created application, go to the Bot tab, and create a new bot. Copy the received token and save it in a secure place.
+**3.** Access the newly created application, go to the Bot tab, and create a new bot. Copy the received token and save it in a secure place.
 
-**6.** Navigate to the OAuth2 tab and add a new "Redirect" with the value `https://yourDashboardDomainHere.example/linkedroles/callback`.
+**4.** Navigate to the OAuth2 tab and add a new "Redirect" with the value `https://yourDashboardDomainHere.example/linkedroles/callback`.
 
-**7.** After confirming the changes, open the General Information tab, scroll down, and paste `https://yourDashboardDomainHere.example/linkedroles` into the **LINKED ROLES VERIFICATION URL** field.
+**5.** After confirming the changes, open the General Information tab, scroll down, and paste `https://yourDashboardDomainHere.example/linkedroles` into the **LINKED ROLES VERIFICATION URL** field.
 
-**8.** Add your bot to your server using the Url Generator from the OAuth2 tab.
+**6.** Add your bot to your server using the Url Generator from the OAuth2 tab.
 
-**9.** Run the following command in the terminal:
+**7.** Run the following command in the terminal:
 
 ```bash
 php artisan discord:link
 ```
 Then follow the instructions in the terminal.
 
-**10.** Create a role on your server and go to the "Links" section to add a new requirement. You will see a list of social platforms followed by Your Application. Choose Your Application and select the requirements you prefer.
+**8.** Create a role on your server and go to the "Links" section to add a new requirement. You will see a list of social platforms followed by Your Application. Choose Your Application and select the requirements you prefer.
 
 ![image](https://github.com/CorwinDev/paymenter-discordlink/assets/41286754/56ed2f84-ab0d-4672-b0dc-b5b627618727)
 
@@ -68,6 +55,6 @@ To grant a user the role, they must click on "Linked Roles" from the server's co
 ![image](https://github.com/CorwinDev/paymenter-discordlink/assets/41286754/663a7e2f-1c2a-4247-899e-5f6031696a14)
 
 
-**11.** Done!
+**9.** Done!
 
-**12.** Leave a star on the GitHub repository if you like this extension!
+**10.** Leave a star on the GitHub repository if you like this extension!
