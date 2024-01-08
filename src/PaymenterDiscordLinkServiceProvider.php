@@ -3,8 +3,9 @@
 namespace CorwinDev\PaymenterDiscordlink;
 
 use Illuminate\Support\ServiceProvider;
+use CorwinDev\PaymenterDiscordlink\Console\Commands\DiscordLink;
 
-class DiscordLinkServiceProvider extends ServiceProvider
+class PaymenterDiscordLinkServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -26,7 +27,7 @@ class DiscordLinkServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \CorwinDev\PaymenterDiscordlink\Console\Commands\DiscordLink::class,
+                DiscordLink::class,
             ]);
         }
     }

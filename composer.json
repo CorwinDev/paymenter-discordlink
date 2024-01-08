@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Corwindev\\PaymenterDiscordlink\\DiscordLinkServiceProvider"
+                "Corwindev\\PaymenterDiscordlink\\PaymenterDiscordLinkServiceProvider"
             ]
         }
     }
