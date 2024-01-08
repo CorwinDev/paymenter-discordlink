@@ -1,6 +1,6 @@
 <?php
 
-namespace CorwinDev\DiscordLink\Http\Controllers;
+namespace CorwinDev\PaymenterDiscordlink\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;

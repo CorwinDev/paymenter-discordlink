@@ -1,6 +1,6 @@
 <?php
 
-namespace CorwinDev\DiscordLink;
+namespace CorwinDev\PaymenterDiscordlink;
 
 use Illuminate\Support\ServiceProvider;
 

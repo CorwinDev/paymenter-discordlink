@@ -1,6 +1,5 @@
 <?php
-
-namespace CorwinDev\DiscordLink\Console\Commands;
+namespace CorwinDev\PaymenterDiscordlink\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
