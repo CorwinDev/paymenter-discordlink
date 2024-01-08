@@ -26,7 +26,7 @@ class DiscordLinkServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \CorwinDev\PaymenterDiscordlink\Console\Commands::class,
+                \CorwinDev\PaymenterDiscordlink\Console\Commands\DiscordLink::class,
             ]);
         }
     }
