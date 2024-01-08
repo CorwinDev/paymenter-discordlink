@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace CorwinDev\DiscordLink;
 
 use Illuminate\Support\ServiceProvider;
 
